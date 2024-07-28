@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+AR:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  background-color: rgb(15, 33, 43);
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 0 20px;
+}
+
+.content {
+  h1 {
+    text-align: center;
+    font-weight: 500;
+    b {
+      font-weight: 800;
+      color: red;
+    }
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    margin: 30px 0;
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      input {
+        width: clamp(330px, 50vw, 490px);
+        height: clamp(10px, 10vw, 50px);
+        font-size: clamp(12px, 3vw, 18px);
+        border-radius: 7px;
+        border: none;
+        padding: 5px;
+      }
+      button {
+        width: clamp(330px, 50vw, 490px);
+        height: clamp(30px, 10vw, 50px);
+        font-size: clamp(18px, 3vw, 20px);
+        outline: none;
+        border: none;
+      }
+      .create {
+        color: #fff;
+        border-radius: 8px;
+        background-color: green;
+      }
+      .edit {
+        color: #fff;
+        border-radius: 8px;
+        background-color: rgb(189, 194, 33);
+      }
+    }
+  }
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    .items {
+      text-align: center;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid rgb(139, 44, 0);
+      border-radius: 10px;
+      width: 100%;
+      height: clamp(240px, 30vw, 320px);
+      max-width: clamp(190px, 30vw, 260px);
+      img {
+        max-width: clamp(120px, 30vw, 220px);
+      }
+      .btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 12px;
+        button {
+          color: #fff;
+          margin: 4px 0;
+          padding: 3px 10px;
+          border: none;
+          outline: none;
+          border-radius: 4px;
+        }
+        .btn_del {
+          background-color: red;
+        }
+        .btn_edit {
+          background-color: rgb(212, 202, 4);
+        }
+      }
+    }
+  }
+}
